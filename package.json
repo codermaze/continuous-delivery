@@ -1,0 +1,14 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "A simple nodejs hello-world project to show continuous integration to build and deploy using Jenkins to mesos/marathon cluster",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "docker:build": "docker build -t hari-hello-world .",
+    "docker:start": "docker run -p 8000:8000 hari-hello-world",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hari Mukkapati",
+  "license": "ISC"
+}
