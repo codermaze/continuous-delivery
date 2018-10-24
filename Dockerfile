@@ -1,5 +1,5 @@
 #FROM google/nodejs
-FROM codermaze/alpine-node:6.10.0
+FROM codermaze/alpine-node:10.12.0
 
 WORKDIR /app
 ADD package.json /app/
